@@ -1,0 +1,27 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+<div class="indexNav">
+    <h1 class="pushLeft">Choose what action to do with the customer's info from the options below:</h1>
+    <br>
+    <br>
+    <a class="pushLeft" href="/customers/addCustomer">Add a customer to the library</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/customers/findCustomer">Search for specific customer</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/customers/removeCustomer">Remove a specific customer from the library</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/customers/displayAllCustomers">Show all the customers currently in the library's DataBase</a>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

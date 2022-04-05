@@ -1,0 +1,32 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+<div class="indexNav">
+    
+    <h1 class="pushLeft">Book Shelves</h1>
+    <br>
+    <br>
+    <p class="pushLeft">Choose what action to do with your book from the options below:</p>
+    <br>
+    <br>
+    <a class="pushLeft" href="/books/showAllBooks">Display all books currently in the library stock</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/books/findBook">Find a Specific book among the shelves</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/books/addBook">Add a book to the library</a>
+    <br>
+    <br>
+    <a class="pushLeft" href="/books/removeBook">Delete a book from the library stock</a>
+    
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

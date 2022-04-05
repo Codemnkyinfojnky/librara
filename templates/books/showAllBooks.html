@@ -1,0 +1,34 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Show me the library shelves:</h1>
+
+<div class="pushLeft">
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Book's Name</th>
+            <th>Book's Author</th>
+            <th>Book's Publish date</th>
+            <th>Book Type </th>
+            <th>Avalability</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{book[0]}}</td>
+            <td>{{book[1]}}</td>
+            <td>{{book[2]}}</td>
+            <td>{{book[3]}}</td>
+            <td>{{book[4]}}</td>
+            <td>{{book[5]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}

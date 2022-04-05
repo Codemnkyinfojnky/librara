@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href='/static/CSS/styles.css'>
+    <title>{% block title %}{% endblock %} Mahagony library</title>
+    {% endblock %}
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: rgb(245, 241, 241);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        </style>
+  </head>
+  </style>
+  <body style="background-image: url('/static/images/image1.jpg');background-repeat: no-repeat;background-size: cover;">
+
+  <body>
+    <style>
+      a:link {
+        color: rgb(143, 220, 55);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      </style>
+    <ul>
+        <!-- <li><a class="active" href="#home">Home</a></li> -->
+        <li><a style="color: rgb(209, 148, 74);"  href="/home">Back to homepage</a></li>
+        <li><a style="color: rgb(209, 148, 74);" href="/books">Enter The Books Library</a></li>
+        <li><a style="color: rgb(209, 148, 74);" href="/customers">Go to Customer info Data Base</a></li>
+        <li><a style="color: rgb(209, 148, 74);" href="/loans">Go to loans department</a></li>
+      </ul>
+    <div id="content">{% block content %}{% endblock %}</div>
+    
+    
+      {% block footer %}
+     
+      {% endblock %}
+    
+    <div class="pushLeft">
+    <footer>
+        <p>Made by: Yishai Shoshani</p>
+        <p><a href="mailto:hege@example.com">yishailifemusic@gmail.com</a></p>
+      </footer>
+    </div>  
+  </body>
+</html>

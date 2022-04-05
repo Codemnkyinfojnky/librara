@@ -1,0 +1,24 @@
+{%extends 'layout.html'%}
+{%block header%}{{super()}}{%endblock%}
+{%block content%}
+
+<h1 class="pushLeft">Remove a book from the library shelves by his ID:</h1>
+<div class="pushLeft">
+    <form action="/books/removeBook" method="POST">
+        <label>What is the book ID?:</label>
+        <br>
+        <input type="text" name="ID" required autofocus>
+        <br>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Remove the book from the shelves!</button>
+    </form>
+</div>
+<br>
+<br>
+
+<div class="pushLeft">
+    {{msg}}
+</div>
+{%endblock%}
+{%block footer%}{{super()}}{%endblock%}
